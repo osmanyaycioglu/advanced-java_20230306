@@ -6,13 +6,15 @@ public class CardRunner {
         employee.setFirstName("osman");
         employee.setLastName("yaycıoğlu");
 
-        CardPrinter cardPrinter = new CardPrinter();
+        CardPrinterAdapter cardPrinter = new CardPrinterAdapter();
         cardPrinter.print(employee);
 
         Customer customer = new Customer();
         customer.setName("mehmet");
         customer.setSurname("alaz");
-        //
-        cardPrinter.print();
+        cardPrinter.print(customer);
+
+        CustomerEmployeeAdapter customerEmployeeAdapter = new CustomerEmployeeAdapter(customer);
+        cardPrinter.print(customerEmployeeAdapter);
     }
 }
