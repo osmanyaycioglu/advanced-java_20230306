@@ -6,6 +6,7 @@ public class Customer {
     private String name;
     private String surname;
     private BigDecimal balance;
+    private ECustomerType customerType;
 
     public String getName() {
         return name;
@@ -29,5 +30,13 @@ public class Customer {
 
     public void setBalance(BigDecimal balanceParam) {
         balance = balanceParam;
+    }
+
+    public ECustomerType getCustomerType() {
+        return customerType;
+    }
+
+    public void setCustomerType(ECustomerType customerTypeParam) {
+        customerType = customerTypeParam;
     }
 }
