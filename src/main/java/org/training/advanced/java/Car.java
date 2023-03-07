@@ -1,6 +1,8 @@
 package org.training.advanced.java;
 
-public class Car extends Object {
+import java.util.Objects;
+
+public class Car extends Object implements Comparable<Car> {
 
     private int speed;
     private int turnSpeed;
@@ -41,4 +43,23 @@ public class Car extends Object {
         return counter;
     }
 
+    @Override
+    public int compareTo(Car o) {
+        return Integer.compare(speed, o.speed);
+    }
+
+    @Override
+    public boolean equals(Object oParam) {
+        if (this == oParam) return true;
+        if (oParam == null || getClass() != oParam.getClass()) return false;
+        Car car = (Car) oParam;
+        return speed == car.speed && turnSpeed == car.turnSpeed && counter == car.counter;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(speed,
+                            turnSpeed,
+                            counter);
+    }
 }
