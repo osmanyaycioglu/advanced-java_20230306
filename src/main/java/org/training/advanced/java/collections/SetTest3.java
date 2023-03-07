@@ -9,6 +9,11 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class SetTest3 {
+
+    public static class CounterService {
+        int counter;
+    }
+
     public static void main(String[] args) {
 
         Set<String> stringsTest = new HashSet<>();
@@ -19,6 +24,8 @@ public class SetTest3 {
         stringsTest.add("mehmet");
         stringsTest.add("mahmut");
         stringsTest.add("ayşe");
+        final CounterService counterService = new CounterService();
+        stringsTest.forEach(s -> System.out.println(s +" -- " + (++counterService.counter) + " data"));
 
         Set<String> stringsTest2 = new HashSet<>();
         // Set<String> stringsTest = new TreeSet<>();
