@@ -10,6 +10,13 @@ public class Customer {
     private ECustomerType customerType;
     private String username;
 
+    public Customer() {
+    }
+
+    public Customer(String nameParam) {
+        name = nameParam;
+    }
+
     public String getName() {
         return name;
     }
