@@ -1,4 +1,4 @@
-package org.training.advanced.java.lab1;
+package org.training.advanced.java.collections.lab1;
 
 public class Account {
 

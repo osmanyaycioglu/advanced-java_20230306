@@ -1,4 +1,4 @@
-package org.training.advanced.java.lab1;
+package org.training.advanced.java.collections.lab1;
 
 import java.time.LocalDateTime;
 import java.util.List;
