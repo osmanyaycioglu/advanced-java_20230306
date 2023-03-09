@@ -196,4 +196,18 @@ public class Customer {
                    + ")";
         }
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+               "name='" + name + '\'' +
+               ", surname='" + surname + '\'' +
+               ", height=" + height +
+               ", username='" + username + '\'' +
+               ", password='" + password + '\'' +
+               ", activated=" + activated +
+               ", activatedDate=" + activatedDate +
+               ", accounts=" + accounts +
+               '}';
+    }
 }

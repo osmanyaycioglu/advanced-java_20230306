@@ -62,4 +62,12 @@ public class Account {
             return "Account.AccountBuilder(amount=" + this.amount + ", accountType=" + this.accountType + ")";
         }
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+               "amount=" + amount +
+               ", accountType=" + accountType +
+               '}';
+    }
 }
